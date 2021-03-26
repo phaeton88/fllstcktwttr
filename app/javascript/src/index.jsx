@@ -5,7 +5,7 @@ import './index.scss';
 
 const Index = () => (
   <Layout>
-    <h1>Start page</h1>
+    <h1>Starting page</h1>
   </Layout>
 )
 
