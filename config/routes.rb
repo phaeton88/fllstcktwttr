@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  root 'homepage#index'
+  root 'static_pages#index'
 
-    get '/feed'                    => 'feed#index'
+    get '/feed'                    => 'static_pages#feed'
 
-    get '/userpage'                => 'userpage#index'
+    get '/userpage'                => 'static_pages#userpage'
 
 
 
