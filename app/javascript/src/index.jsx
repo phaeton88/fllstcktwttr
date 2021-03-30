@@ -24,7 +24,7 @@ class HomePage extends React.Component {
   handleChange(event) {
     const { name, value } = event.target;
     this.setState({
-      [name]: value // ES6 object computed property name
+      [name]: value
     });
   }
 
@@ -56,16 +56,17 @@ class HomePage extends React.Component {
     fetch(`/sessions`, safeCredentials({
       method: 'POST',
       body: JSON.stringify({
-      user: {
-        username: logusername,
-        password: logpassword,
+        user: {
+          username: logusername,
+          password: logpassword,
         }
       })
     }))
     .then(handleErrors)
     .then(res => {
-        console.log(res);
-        }
+      if (res.success) {
+        window.location.replace("/feed");;
+      }
     })
 
   }
