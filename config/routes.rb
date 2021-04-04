@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
     get '/feed'                    => 'static_pages#feed'
 
-    get '/userpage'                => 'static_pages#userpage'
+    get '/userpage/:user'                => 'static_pages#userpage'
 
 
 
