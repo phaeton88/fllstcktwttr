@@ -14,10 +14,10 @@ class Tweet extends React.Component {
           </a>
           <p>Message: {message} </p>
           {(function () {
-    if (usrname === username) {
-      return (<button className="btn-danger mb-4" onClick={() => onDelete(id)}>Delete</button>)
-    }
-    })()}
+            if (usrname === username) {
+            return (<button className="btn-danger mb-4" onClick={() => onDelete(id)}>Delete</button>)
+            }
+          })()}
         </div>
       </div>
     )

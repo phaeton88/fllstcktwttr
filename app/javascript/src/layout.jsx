@@ -23,14 +23,14 @@ const Layout = (props) => {
         </ul>
       </div>
     </nav>
-      <div className="container py-3">
-        {props.children}
+    <div className="container py-3">
+      {props.children}
+    </div>
+    <footer className="p-5 footer">
+      <div>
+        <span className="mr-3 text-secondary small">Built by Alex Kostritsa</span>
       </div>
-      <footer className="p-5 footer">
-        <div>
-          <span className="mr-3 text-secondary small">Built by Alex Kostritsa</span>
-        </div>
-      </footer>
+    </footer>
     </React.Fragment>
   );
 }

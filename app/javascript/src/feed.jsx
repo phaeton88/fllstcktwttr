@@ -15,12 +15,12 @@ class Feed extends React.Component {
       tweets: [],
       usrname: '',
     }
-  this.handleChange = this.handleChange.bind(this);
-  this.handleSubmit = this.handleSubmit.bind(this);
-  this.getTweets = this.getTweets.bind(this);
-  this.authenticate = this.authenticate.bind(this);
-  this.deleteTweet = this.deleteTweet.bind(this);
-  this.logOut = this.logOut.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.getTweets = this.getTweets.bind(this);
+    this.authenticate = this.authenticate.bind(this);
+    this.deleteTweet = this.deleteTweet.bind(this);
+    this.logOut = this.logOut.bind(this);
   }
 
 

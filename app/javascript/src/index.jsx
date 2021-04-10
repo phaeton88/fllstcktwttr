@@ -15,9 +15,9 @@ class HomePage extends React.Component {
       logpassword: '',
     }
 
-  this.handleChange = this.handleChange.bind(this);
-  this.handleSignup = this.handleSignup.bind(this);
-  this.handleLogin = this.handleLogin.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSignup = this.handleSignup.bind(this);
+    this.handleLogin = this.handleLogin.bind(this);
 
   }
 
@@ -88,14 +88,6 @@ class HomePage extends React.Component {
             <input type="password" name="logpassword" value={logpassword} onChange={this.handleChange} className="form-control password" placeholder="Password"></input>
           </div>
           <button id="log-in-btn" className="btn btn-default btn-primary col-xs-3 col-xs-offset-1">Log in</button>
-          {/*
-          <label>
-            <input type="checkbox"></input>
-            <span>Remember me</span>
-            <span> &#183; </span>
-          </label>
-          <a href="#">Forgot password?</a>
-          */}
         </form>
 
         <form className="py-5" onSubmit={this.handleSignup}>
